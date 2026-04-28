@@ -7,13 +7,13 @@
       
       
       
-        <link rel="canonical" href="https://tom-howard.github.io/ros2/com/assignment2/part-b/ai-declaration/">
+        <link rel="canonical" href="https://tom-howard.github.io/ros2/com/assignment2/part-b/nav2/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../ai-declaration/">
       
       
-        <link rel="next" href="../nav2/">
+        <link rel="next" href="../task3/">
       
       
         
@@ -24,7 +24,7 @@
     
     
       
-        <title>GenAI Declaration Template - ROS 2 Labs in The Diamond</title>
+        <title>Using Nav2 for Task 3 - ROS 2 Labs in The Diamond</title>
       
     
     
@@ -62,17 +62,17 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="GenAI Declaration Template - ROS 2 Labs in The Diamond">
+<meta property="og:title" content="Using Nav2 for Task 3 - ROS 2 Labs in The Diamond">
 <meta property="og:description" content="Practical Robotics Labs with ROS 2 and the TurtleBot3 Waffle.">
-<meta property="og:image" content="https://tom-howard.github.io/ros2/assets/images/social/com/assignment2/part-b/ai-declaration.png">
+<meta property="og:image" content="https://tom-howard.github.io/ros2/assets/images/social/com/assignment2/part-b/nav2.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://tom-howard.github.io/ros2/com/assignment2/part-b/ai-declaration/">
+<meta property="og:url" content="https://tom-howard.github.io/ros2/com/assignment2/part-b/nav2/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="GenAI Declaration Template - ROS 2 Labs in The Diamond">
+<meta property="twitter:title" content="Using Nav2 for Task 3 - ROS 2 Labs in The Diamond">
 <meta property="twitter:description" content="Practical Robotics Labs with ROS 2 and the TurtleBot3 Waffle.">
-<meta property="twitter:image" content="https://tom-howard.github.io/ros2/assets/images/social/com/assignment2/part-b/ai-declaration.png">
+<meta property="twitter:image" content="https://tom-howard.github.io/ros2/assets/images/social/com/assignment2/part-b/nav2.png">
 <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
@@ -100,6 +100,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#some-words-of-warning" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -130,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GenAI Declaration Template
+              Using Nav2 for Task 3
             
           </span>
         </div>
@@ -2390,6 +2395,75 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#some-words-of-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Some Words of Warning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Some Words of Warning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#this-worked-great-in-simulation-but" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “This worked great in simulation, but...”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#we-arent-nav2-experts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        We Aren’t Nav2 Experts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ensuring-optimal-wifi-performance-in-the-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ensuring Optimal WiFi Performance in the Lab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2405,7 +2479,7 @@
 
 
   
-    <a href="https://github.com/tom-howard/ros2/edit/main/docs/com/assignment2/part-b/ai-declaration.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/tom-howard/ros2/edit/main/docs/com/assignment2/part-b/nav2.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
@@ -2414,93 +2488,40 @@
     
       
     
-    <a href="https://github.com/tom-howard/ros2/raw/main/docs/com/assignment2/part-b/ai-declaration.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/tom-howard/ros2/raw/main/docs/com/assignment2/part-b/nav2.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
     </a>
   
 
 
-  <h1>GenAI Declaration Template</h1>
+  <h1>Using Nav2 for Task 3</h1>
 
-<!-- For info: https://ai-declaration.md/en/0.1.2/ --><p>All teams <strong>MUST</strong> include an <code>AI-Declaration.md</code> file at the root of their package directory:</p>
-<div class="no-copy highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>com2009_teamXX_2026/AI-Declaration.md
-</code></pre></div>
-<p>This file must be written with <em>Markdown Formatted Text</em> and must follow the template shown here:</p>
-<div class="highlight"><span class="filename">AI-Declaration.md</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># Team XX GenAI Declaration <span class="cm">&lt;!-- (6)! --&gt;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Declaration of Generative AI usage for Assignment #2 Part B (Task 3). 
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>## Acknowledge
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>We acknowledge the use of <span class="cm">&lt;!-- (1)! --&gt;</span> for the following purposes:
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="cm">&lt;!-- (2)! --&gt;</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>* [ ] for background research in the drafting of this assessment. 
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>* [ ] to generate materials that were included within the final code submission in modified form.
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>## Describe
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="cm">&lt;!-- (3)! --&gt;</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>## Evidence
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="cm">&lt;!-- (4)! --&gt;</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>## Declaration
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="cm">&lt;!-- (5)! --&gt;</span>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>* [ ] We confirm that no content created by generative AI has been presented as our own work. 
-</code></pre></div>
+<p><a href="https://docs.nav2.org/" target="_blank" rel="noopener">Nav2</a> is an autonomous navigation stack built into ROS 2. It might seem like the logical choice for Task 3, but there are some important considerations you should make before opting for this approach.</p>
+<h2 id="some-words-of-warning">Some Words of Warning<a class="headerlink" href="#some-words-of-warning" title="Permanent link">¶</a></h2>
+<h3 id="this-worked-great-in-simulation-but">“This worked great in simulation, but...”<a class="headerlink" href="#this-worked-great-in-simulation-but" title="Permanent link">¶</a></h3>
+<p>Many questions we get in the lab start with this phrase.<sup id="fnref:a-pound"><a class="footnote-ref" href="#fn:a-pound">1</a></sup></p>
+<p>Nav2 is a classic example of this: you can spend lots of time carefully crafting a solution that works great in simulation only to find that nothing works the same on the real hardware in the lab. <strong>You will need to do lots of real world testing</strong> to optimise and fine-tune the navigation stack to work effectively in the real robot arena. </p>
+<p>If you want to use Nav2 then make sure you factor this in: you only have limited access to the real hardware, so make sure you plan accordingly and ensure you'll be able to do enough testing to be confident that your solution will work as expected on the day of the assessment. </p>
+<p>Ultimately, <strong>we are unable to give you additional access to the robots outside the labs / drop-in sessions</strong> (and remember that bookings for the drop-ins are limited and available on a first come, first served basis). </p>
+<h3 id="we-arent-nav2-experts">We Aren’t Nav2 Experts<a class="headerlink" href="#we-arent-nav2-experts" title="Permanent link">¶</a></h3>
+<p>We (the Robotics Teaching Team) don't have extensive experience in using Nav2 ourselves (we don't have the time!), so if you have problems it's unlikely that we'll be able to help you much in the labs.</p>
+<h3 id="ensuring-optimal-wifi-performance-in-the-lab">Ensuring Optimal WiFi Performance in the Lab<a class="headerlink" href="#ensuring-optimal-wifi-performance-in-the-lab" title="Permanent link">¶</a></h3>
+<p>We are heavily dependent on good WiFi in the lab in order for our robots to work effectively. We've worked very hard to ensure that our robots and our WiFi network in the Diamond are sufficient for <em>general use</em> for all teams in the labs (up to 20 robots).<sup id="fnref:nics-2026"><a class="footnote-ref" href="#fn:nics-2026">2</a></sup></p>
+<p>In the past, we've observed that Nav2 places excessive demand on the network, and results in performance issues for everyone. Ultimately, we don't view Nav2 as a <em>"general use"</em> tool, and we therefore will not prioritise this type of usage in the lab. This means, if we observe issues during lab sessions arising due to heavy Nav2 usage, we will place limits on the number of teams who can use it simultaneously. </p>
+<h2 id="in-summary">In Summary<a class="headerlink" href="#in-summary" title="Permanent link">¶</a></h2>
+<p>Any teams who wish to use Nav2 for Task 3 <strong><em>do so at their own risk</em></strong>.</p>
+<div class="footnote">
+<hr>
 <ol>
-<li>
-<p>Insert the name of the AI system(s) here.</p>
+<li id="fn:a-pound">
+<p>In fact, if I had £1 for every question I was asked that started like this, I'd be teaching this course remotely from the Bahamas by now <img alt="🤑" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f911.svg" title=":money_mouth:">!&nbsp;<a class="footnote-backref" href="#fnref:a-pound" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
-<li>
-<p>To tick a checkbox using Markdown, put an <code>x</code> inside the square brackets: </p>
-<div class="no-copy highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">* [ ]</span> for background research...
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">* [x]</span> to generate materials... 
-</code></pre></div>
-</li>
-<li>
-<p>Provide a summary of how you used generative AI in this assignment. You may wish to include the following information:</p>
-<ul>
-<li>What prompts did you use?</li>
-<li>What outputs did you generate?</li>
-<li>How did you use/adapt/develop the outputs?</li>
-</ul>
-</li>
-<li>
-<p>Provide evidence of the outputs that were generated, e.g.:</p>
-<div class="no-copy highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Generative AI system:
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Prompt:
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Output:
-</code></pre></div>
-<p>or <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images" target="_blank" rel="noopener">by providing screenshots</a>.</p>
-</li>
-<li>
-<p><strong>Important</strong>: Tick the box to confirm this:</p>
-<div class="no-copy highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">* [x]</span> We confirm that ... 
-</code></pre></div>
-</li>
-<li>
-<p>Replace <code>XX</code> with your team number.</p>
+<li id="fn:nics-2026">
+<p>In 2026 (for example) we upgraded the WiFI NICs in all of our robots, increasing data throughput by more than 6x. We've also worked extensively with IT Services to optimise the WiFi performance in Diamond Computer Room 5. We are at the point now where we are basically limited by physics!&nbsp;<a class="footnote-backref" href="#fnref:nics-2026" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
-<p><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" target="_blank" rel="noopener">For basic Markdown formatting syntax, see here</a>.</p>
-<p>If your team did not use GenAI in any way for Assignment #2 Part B, then the following <code>AI-Declaration.md</code> will suffice:</p>
-<div class="highlight"><span class="filename">AI-Declaration.md</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a># Team XX GenAI Declaration <span class="cm">&lt;!-- (1)! --&gt;</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Declaration of Generative AI usage for Assignment #2 Part B (Task 3). 
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>## Declaration
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="cm">&lt;!-- (2)! --&gt;</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>* [ ] We did not use AI in any way for this assignment. 
-</code></pre></div>
-<ol>
-<li>Replace <code>XX</code> with your team number.</li>
-<li>
-<p>Ensure that you tick the box to actually confirm this:</p>
-<div class="no-copy highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">* [x]</span> We did not use AI ... 
-</code></pre></div>
-</li>
-</ol>
+</div>
 
 
 
@@ -2523,7 +2544,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 20, 2026 09:28:26 UTC"><span class="timeago" datetime="2026-04-20T09:28:26+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 20, 2026 09:28:26 UTC">2026-04-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 28, 2026 10:34:10 UTC"><span class="timeago" datetime="2026-04-28T10:34:10+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 28, 2026 10:34:10 UTC">2026-04-28</span>
   </span>
 
     
@@ -2533,7 +2554,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 16, 2026 12:49:01 UTC"><span class="timeago" datetime="2026-04-16T12:49:01+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 16, 2026 12:49:01 UTC">2026-04-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 28, 2026 10:34:10 UTC"><span class="timeago" datetime="2026-04-28T10:34:10+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 28, 2026 10:34:10 UTC">2026-04-28</span>
   </span>
 
     
@@ -2568,7 +2589,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Assignment #2 Part B">
+          <a href="../ai-declaration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GenAI Declaration Template">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -2578,20 +2599,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Assignment #2 Part B
+                GenAI Declaration Template
               </div>
             </div>
           </a>
         
         
           
-          <a href="../nav2/" class="md-footer__link md-footer__link--next" aria-label="Next: Using Nav2 for Task 3">
+          <a href="../task3/" class="md-footer__link md-footer__link--next" aria-label="Next: Task 3: Exploration &amp; Search">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Using Nav2 for Task 3
+                Task 3: Exploration &amp; Search
               </div>
             </div>
             <div class="md-footer__button md-icon">
