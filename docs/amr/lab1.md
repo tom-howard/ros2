@@ -2,8 +2,8 @@
 title: "Lab 1: Mobile Robotics"
 ---  
 
-!!! info 
-    You should be able to complete exercises 1-7 on this page within a two-hour lab session.
+<!-- !!! info 
+    You should be able to complete exercises 1-7 on this page within a two-hour lab session. -->
 
 ## Introduction
 
@@ -46,12 +46,6 @@ By the end of this session you will be able to:
 * [Exercise 8 (Advanced): Alternative Motion Paths](#ex8)
 
 ## The Lab
-
-!!! info "Assessment Info"
-    This lab is **summatively assessed**.
-
-    1. There's a **post-lab quiz** that you'll need to complete after this lab session has taken place, which will be released on Blackboard.
-    1. You'll also be marked on the work that you do **in the lab** for [Exercise 7](#ex7).
 
 ### Getting Started
 
@@ -215,9 +209,6 @@ ros2 run {[1] Package name} {[2] Node name}
 
 Here, **Part [1]** is the same as the `ros2 launch` command, but **Part [2]** is slightly different: `{[2] Node name}`. Here we are directly specifying a single script that we want to execute. We therefore use `ros2 run` if we only want to launch a **single node** on the ROS network (e.g. `teleop_keyboard`, which is a Python script).
 
-!!! info "Post-lab"
-    What were the names of the three packages that we invoked in Exercise 1?
-
 #### :material-pen: Exercise 2: Seeing the Waffle's Sensors in Action! {#ex2}
 
 Our Waffles have some pretty sophisticated sensors on them, allowing them to "see" the world around them. We won't really make much use of these during this lab, but this next exercise will allow you to see how the data from these devices could be used to help our robots do some very advanced things (with some clever programming, of course!)
@@ -232,10 +223,6 @@ Our Waffles have some pretty sophisticated sensors on them, allowing them to "se
     ros2 run rqt_image_view rqt_image_view
     ```
     ***
-
-    !!! info "Post-lab"
-        1. We're using `ros2 run` here again, what does this mean?
-        1. Why did we have to type `rqt_image_view` twice?
     
 1. A new window should open. Maximise this (if it isn't already) and then select `/camera/color/image_raw` from the dropdown menu at the top-left of the application window.
 1. Live images from the robot's camera should now be visible! Stick your face in front of the camera and see yourself appear on the laptop screen!
@@ -359,9 +346,6 @@ Using `ros2 run` and `ros2 launch`, as we have done so far, it's easy to end up 
       ![](../images/rqt/graph_waffle_teleop.png){width=600px}
     </figure>
 
-    !!! info "Post-lab"
-        What's changed? Make sure you know how to interpret these graphs.
-
 A ROS Robot could have hundreds of individual nodes running simultaneously to carry out all its necessary operations and actions. Each node runs independently, but uses *ROS communication methods* to communicate and share data with the other nodes on the ROS Network.
 
 ### Publishers and Subscribers: A *ROS Communication Method* 
@@ -479,9 +463,6 @@ Our TurtleBot3 only has two motors, so it doesn't actually have six DOFs! These 
 
 Velocity can therefore only be applied **linearly** in the **x-axis** (*Forwards/Backwards*) and **angularly** in the **z-axis** (*Yaw*). 
 
-!!! info "Post-lab"
-    Take note of all this, there may be a question on it!
-
 #### :material-pen: Exercise 5: Publishing Velocity Commands to the "cmd_vel" Topic {#ex5}
 
 1. Stop the `teleop_keyboard` node now by entering ++ctrl+c++ in **TERMINAL 4**. We're going to use another graphical tool to help us publish messages to the `/cmd_vel` topic *directly* now.
@@ -571,24 +552,6 @@ As we learnt earlier, all ROS nodes must be contained within *packages*, so in o
     <figure markdown>
       ![](./lab1/vscode_explorer_package_xml.png){width=400px}
     </figure>
-
-    Look for a file here called `package.xml` and click on it. This will open this file in the main VS Code window, to allow you to edit it.
-
-1. Look for the following lines in the `package.xml` file:
-
-    ``` title="package.xml"
-    <maintainer email="your.name.1@sheffield.ac.uk">Name 1</maintainer>
-    <maintainer email="your.name.2@sheffield.ac.uk">Name 2</maintainer>
-    ```
-
-    Change `Name 1` to your name, and then change `your.name.1@sheffield.ac.uk` to your Sheffield email address! Then, do the same for your other Group member on the line below it. (If you're working in a group of more than 2 people, then you can add additional lines below this for your other group members.)
-
-    !!! warning "Post-lab"
-        **This is important for the post-lab**!
-
-        We'll be assessing your work here as part of the post-lab, so it's important that we can identify each member of your group. If any group members aren't listed here, then they won't receive any marks for this! 
-
-        When entering your names, make sure you provide first names **AND** surnames for each group member.
 
 1. Go back to **TERMINAL 3** now and run the following three commands:
 
@@ -770,9 +733,6 @@ This is a (fairly) basic ROS 2 Python Node that will control the velocity of the
     The aim here is to make the robot follow a **square motion path** of dimensions **0.5m x 0.5m**. As it is though, the `basic_velocity_control.py` node doesn't actually do this yet, and you need to fix it!
         
     Edit the code so that the robot actually follows a **0.5m x 0.5m square motion path**!
-
-    !!! info "Post-lab"
-        As discussed above, your completion of this exercise will be assessed as part of the post-lab!
 
 #### :material-pen: Exercise 8 (Advanced): Alternative Motion Paths {#ex8}
 
